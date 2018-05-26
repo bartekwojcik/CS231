@@ -43,6 +43,11 @@ samples_per_class = 7
 # plt.ioff()
 # plt.show()
 
+
+oneloop = False
+
+
+
 # Subsample the data for more efficient code execution in this exercise
 num_training = 5000
 mask = list(range(num_training))
@@ -63,22 +68,63 @@ from classifiers.KNearestNeighbor import KNearestNeighbor
 classifier = KNearestNeighbor()
 classifier.train(X_train, y_train)
 
-dists = classifier.compute_distances_two_loops(X_test)
-print(dists.shape)
+if oneloop:
+    dists_two = classifier.compute_distances_two_loops(X_test)
 
-# We can visualize the distance matrix: each row is a single test example and
-# its distances to training examples
-plt.imshow(dists, interpolation='none')
-plt.ioff()
-# plt.show()
-debug = 5
+    print(dists_two.shape)
 
-# Now implement the function predict_labels and run the code below:
-# We use k = 1 (which is Nearest Neighbor).
-y_test_pred = classifier.predict_labels(dists, k=1)
+    # We can visualize the distance matrix: each row is a single test example and
+    # its distances to training examples
+    plt.imshow(dists_two, interpolation='none')
+    plt.ioff()
+    # plt.show()
+    debug = 5
 
-# Compute and print the fraction of correctly predicted examples'numpy.int64' object is not iterable
-num_correct = np.sum(y_test_pred == y_test)
-accuracy = float(num_correct) / num_test
-print('Got %d / %d correct => accuracy: %f' % (num_correct, num_test, accuracy))
+    # Now implement the function predict_labels and run the code below:
+    # We use k = 1 (which is Nearest Neighbor).
+    y_test_pred = classifier.predict_labels(dists_two, k=5)
+
+    # Compute and print the fraction of correctly predicted examples'numpy.int64' object is not iterable
+    num_correct = np.sum(y_test_pred == y_test)
+    accuracy = float(num_correct) / num_test
+    print('Got %d / %d correct => accuracy: %f' % (num_correct, num_test, accuracy))
+    debug = 5
+
+    dists_one = classifier.compute_distances_one_loop(X_test)
+    difference = np.linalg.norm(dists_two - dists_one, ord='fro')
+    print('Difference was: %f' % (difference, ))
+    if difference < 0.001:
+        print('Good! The distance matrices are the same')
+    else:
+        print('Uh-oh! The distance matrices are different')
+
+    dists_zero = classifier.compute_distances_no_loops(X_test)
+
+    difference = np.linalg.norm(dists_zero - dists_two, ord='fro')
+    print('Difference was: %f' % (difference, ))
+    if difference < 0.001:
+        print('Good! The distance matrices are the same')
+    else:
+        print('Uh-oh! The distance matrices are different')
+
+
+# Let's compare how fast the implementations are
+def time_function(f, *args):
+    """
+    Call a function f with args and return the time (in seconds) that it took to execute.
+    """
+    import time
+    tic = time.time()
+    f(*args)
+    toc = time.time()
+    return toc - tic
+
+two_loop_time = time_function(classifier.compute_distances_two_loops, X_test)
+print('Two loop version took %f seconds' % two_loop_time)
+
+one_loop_time = time_function(classifier.compute_distances_one_loop, X_test)
+print('One loop version took %f seconds' % one_loop_time)
+
+no_loop_time = time_function(classifier.compute_distances_no_loops, X_test)
+print('No loop version took %f seconds' % no_loop_time)
 
