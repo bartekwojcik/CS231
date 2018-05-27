@@ -1,4 +1,6 @@
 import random
+from pydoc import Doc
+
 import numpy as np
 from myDataUtils import load_CIFAR10
 import matplotlib.pyplot as plt
@@ -119,12 +121,90 @@ def time_function(f, *args):
     toc = time.time()
     return toc - tic
 
-two_loop_time = time_function(classifier.compute_distances_two_loops, X_test)
-print('Two loop version took %f seconds' % two_loop_time)
+doTest = False
+if doTest:
+    two_loop_time = time_function(classifier.compute_distances_two_loops, X_test)
+    print('Two loop version took %f seconds' % two_loop_time)
 
-one_loop_time = time_function(classifier.compute_distances_one_loop, X_test)
-print('One loop version took %f seconds' % one_loop_time)
+    one_loop_time = time_function(classifier.compute_distances_one_loop, X_test)
+    print('One loop version took %f seconds' % one_loop_time)
 
-no_loop_time = time_function(classifier.compute_distances_no_loops, X_test)
-print('No loop version took %f seconds' % no_loop_time)
+    no_loop_time = time_function(classifier.compute_distances_no_loops, X_test)
+    print('No loop version took %f seconds' % no_loop_time)
+
+
+num_folds = 5
+k_choices = [1, 3, 5, 8, 10, 12, 15, 20, 50, 100]
+
+X_train_folds = []
+y_train_folds = []
+################################################################################
+# TODO:                                                                        #
+# Split up the training data into folds. After splitting, X_train_folds and    #
+# y_train_folds should each be lists of length num_folds, where                #
+# y_train_folds[i] is the label vector for the points in X_train_folds[i].     #
+# Hint: Look up the numpy array_split function.                                #
+################################################################################
+X_train_folds = np.array_split(X_train,num_folds)
+y_train_folds = np.array_split(y_train, num_folds)
+
+
+################################################################################
+#                                 END OF YOUR CODE                             #
+################################################################################
+
+# A dictionary holding the accuracies for different values of k that we find
+# when running cross-validation. After running cross-validation,
+# k_to_accuracies[k] should be a list of length num_folds giving the different
+# accuracy values that we found when using that value of k.
+k_to_accuracies = {}
+
+################################################################################
+# TODO:                                                                        #
+# Perform k-fold cross validation to find the best value of k. For each        #
+# possible value of k, run the k-nearest-neighbor algorithm num_folds times,   #
+# where in each case you use all but one of the folds as training data and the #
+# last fold as a validation set. Store the accuracies for all fold and all     #
+# values of k in the k_to_accuracies dictionary.                               #
+################################################################################
+
+for k in k_choices:
+    for fold in range(num_folds):
+        k_to_accuracies[k] = []
+        validation_fold_train = X_train_folds[fold]
+        validation_fold_targets = y_train_folds[fold]
+
+
+        train_folds_x = np.concatenate([f for i,f in enumerate(X_train_folds) if i!= fold])
+        train_folds_targets = np.concatenate([f for i,f in enumerate(y_train_folds) if i!= fold])
+
+        classifier = KNearestNeighbor()
+        classifier.train(train_folds_x,train_folds_targets)
+
+        prediction = classifier.predict(validation_fold_train,k)
+        num_correct = np.sum(validation_fold_targets == prediction)
+        accuracy = float(num_correct) / float(len(validation_fold_targets))
+        k_to_accuracies[k].append(accuracy)
+################################################################################
+#                                 END OF YOUR CODE                             #
+################################################################################
+
+# Print out the computed accuracies
+for k in sorted(k_to_accuracies):
+    for accuracy in k_to_accuracies[k]:
+        print('k = %d, accuracy = %f' % (k, accuracy))
+
+# plot the raw observations
+for k in k_choices:
+    accuracies = k_to_accuracies[k]
+    plt.scatter([k] * len(accuracies), accuracies)
+
+# plot the trend line with error bars that correspond to standard deviation
+accuracies_mean = np.array([np.mean(v) for k,v in sorted(k_to_accuracies.items())])
+accuracies_std = np.array([np.std(v) for k,v in sorted(k_to_accuracies.items())])
+plt.errorbar(k_choices, accuracies_mean, yerr=accuracies_std)
+plt.title('Cross-validation on k')
+plt.xlabel('k')
+plt.ylabel('Cross-validation accuracy')
+plt.show()
 
