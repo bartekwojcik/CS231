@@ -77,7 +77,7 @@ def svm_loss_vectorized(W, X, y, reg):
   scores = X.dot(W)
   num_train = X.shape[0]
   num_classes = W.shape[1]
-  correct_class_scores = scores[np.arange(len(scores)),y]
+  correct_class_scores = scores[np.arange(num_train),y]
   margins = np.maximum(0,scores - correct_class_scores.reshape(correct_class_scores.shape[0],1) +1)
   margins[np.arange(margins.shape[0]),y] = 0
   loss = np.sum(margins)
@@ -104,7 +104,7 @@ def svm_loss_vectorized(W, X, y, reg):
   gradient[np.arange(num_train),y] = -incorrectPredicts
   dW = X.T.dot(gradient)
   dW /= num_train
-  dW +=reg * sum(W*W)
+  dW +=reg * W
 
   #############################################################################
   #                             END OF YOUR CODE                              #

@@ -188,3 +188,20 @@ print('Vectorized loss and gradient: computed in %fs' % (toc - tic))
 # we use the Frobenius norm to compare them.
 difference = np.linalg.norm(grad_naive - grad_vectorized, ord='fro')
 print('difference: %f' % difference)
+
+# In the file linear_classifier.py, implement SGD in the function
+# LinearClassifier.train() and then run it with the code below.
+from classifiers.linear_classifier import LinearSVM
+svm = LinearSVM()
+tic = time.time()
+loss_hist = svm.train(X_train, y_train, learning_rate=1e-7, reg=2.5e4,
+                      num_iters=1500, verbose=True)
+toc = time.time()
+print('That took %fs' % (toc - tic))
+
+# A useful debugging strategy is to plot the loss as a function of
+# iteration number:
+plt.plot(loss_hist)
+plt.xlabel('Iteration number')
+plt.ylabel('Loss value')
+plt.show()

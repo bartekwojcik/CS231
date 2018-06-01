@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69aa6d5-2f98-4bfc-be8c-f57b9f219e8d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mycode/svmLogic.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycode/classifiers/linear_classifier.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycode/classifiers/softmax.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycode/svmLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycode/svmLogic.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,33 +16,53 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_svm.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
-              <folding>
-                <element signature="e#0#18#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="svmLogic.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
-              <caret line="168" column="37" lean-forward="true" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-                <marker date="1527803073083" expanded="true" signature="5230:5386" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.41011235">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="linear_classifier.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_classifier.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="139">
+                  <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#0#37#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="svmLogic.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="311">
+                  <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+                  <folding>
+                    <element signature="e#0#37#0" expanded="true" />
+                    <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_svm.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="291">
+                  <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+                  <folding>
+                    <element signature="e#0#18#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -71,6 +93,7 @@
         <option value="$PROJECT_DIR$/mycode/knnLogic.py" />
         <option value="$PROJECT_DIR$/mycode/svm.py" />
         <option value="$PROJECT_DIR$/mycode/svmLogic.py" />
+        <option value="$PROJECT_DIR$/mycode/classifiers/linear_classifier.py" />
         <option value="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" />
       </list>
     </option>
@@ -106,6 +129,12 @@
               <item name="assigment1" type="462c0819:PsiDirectoryNode" />
               <item name="mycode" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="assigment1" type="b2602c69:ProjectViewProjectNode" />
+              <item name="assigment1" type="462c0819:PsiDirectoryNode" />
+              <item name="mycode" type="462c0819:PsiDirectoryNode" />
+              <item name="classifiers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -121,6 +150,9 @@
     <option name="myShowDebugConsoleByDefault" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mycode/classifiers" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/mycode/classifiers" />
     </key>
@@ -210,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1527442071138</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="svms">
+      <created>1527803350217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1527803350217</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
@@ -229,9 +268,9 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.1534626" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010941" side_tool="true" weight="0.34536082" />
-      <window_info anchor="right" x="0" y="0" width="412" height="709" id="Documentation" order="3" side_tool="true" visible="true" weight="0.04044321" />
+      <window_info anchor="right" x="0" y="0" width="412" height="709" id="Documentation" order="3" side_tool="true" visible="true" weight="0.057617728" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49671772" weight="0.344473" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49671772" weight="0.34407216" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4994664" weight="0.39046392" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32860824" />
       <window_info id="Structure" order="1" sideWeight="0.5019685" side_tool="true" weight="0.12800875" />
@@ -253,7 +292,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="classifier - no loops" />
     <MESSAGE value="finished KNN" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished KNN" />
+    <MESSAGE value="svms" />
+    <option name="LAST_COMMIT_MESSAGE" value="svms" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -264,7 +304,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="65" />
+      <option name="time" value="75" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -303,7 +343,7 @@
           <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527803073083" expanded="true" signature="5230:5386" ph="..." />
+            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -324,7 +364,7 @@
           <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527803073083" expanded="true" signature="5230:5386" ph="..." />
+            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -345,7 +385,7 @@
           <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527803073083" expanded="true" signature="5230:5386" ph="..." />
+            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -512,21 +552,50 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/linear_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
-          <caret line="168" column="37" lean-forward="true" selection-start-line="168" selection-start-column="37" selection-end-line="168" selection-end-column="37" />
+        <state>
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527803073083" expanded="true" signature="5230:5386" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycode/classifiers/softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_svm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="105" column="17" lean-forward="true" selection-start-line="105" selection-start-column="17" selection-end-line="105" selection-end-column="17" />
+        <state relative-caret-position="291">
+          <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
