@@ -82,8 +82,8 @@ def svm_loss_vectorized(W, X, y, reg):
   margins[np.arange(margins.shape[0]),y] = 0
   loss = np.sum(margins)
 
-  loss = loss/num_train
-  loss += reg * np.sum(W*W)
+  loss = loss/float(num_train)
+  loss +=0.5* reg * np.sum(W*W)
   #############################################################################
   #                             END OF YOUR CODE                              #
   #############################################################################
