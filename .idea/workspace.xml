@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e69aa6d5-2f98-4bfc-be8c-f57b9f219e8d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/mycode/classifiers/linear_classifier.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mycode/classifiers/softmax.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mycode/softmaxLogic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mycode/svmLogic.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycode/svmLogic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cs231n/classifiers/softmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/cs231n/classifiers/softmax.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mycode/classifiers/softmax.py" beforeDir="false" afterPath="$PROJECT_DIR$/mycode/classifiers/softmax.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,53 +15,68 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.41011235">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="linear_classifier.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_classifier.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="139">
-                  <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
-                  <folding>
-                    <element signature="e#0#37#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="svmLogic.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="311">
-                  <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
-                  <folding>
-                    <element signature="e#0#37#0" expanded="true" />
-                    <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_svm.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="291">
-                  <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
-                  <folding>
-                    <element signature="e#0#18#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="linear_classifier.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_classifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="313">
+              <caret line="100" column="52" lean-forward="true" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="softmax.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/mycode/classifiers/softmax.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="softmaxLogic.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycode/softmaxLogic.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myDataUtils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycode/myDataUtils.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="219">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linear_svm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_svm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -74,6 +88,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>index</find>
+      <find>get_CIFAR10_data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -92,9 +107,12 @@
         <option value="$PROJECT_DIR$/mycode/classifiers/KNearestNeighbor.py" />
         <option value="$PROJECT_DIR$/mycode/knnLogic.py" />
         <option value="$PROJECT_DIR$/mycode/svm.py" />
+        <option value="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" />
         <option value="$PROJECT_DIR$/mycode/svmLogic.py" />
         <option value="$PROJECT_DIR$/mycode/classifiers/linear_classifier.py" />
-        <option value="$PROJECT_DIR$/mycode/classifiers/linear_svm.py" />
+        <option value="$PROJECT_DIR$/cs231n/classifiers/softmax.py" />
+        <option value="$PROJECT_DIR$/mycode/softmaxLogic.py" />
+        <option value="$PROJECT_DIR$/mycode/classifiers/softmax.py" />
       </list>
     </option>
   </component>
@@ -169,7 +187,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.svmLogic">
+  <component name="RunManager" selected="Python.softmaxLogic">
     <configuration name="knn" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="assigment1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -183,6 +201,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mycode/knnLogic.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="softmaxLogic" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="assigment1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/mycode" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mycode/softmaxLogic.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,9 +245,11 @@
     <list>
       <item itemvalue="Python.knn" />
       <item itemvalue="Python.svmLogic" />
+      <item itemvalue="Python.softmaxLogic" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.softmaxLogic" />
         <item itemvalue="Python.svmLogic" />
         <item itemvalue="Python.knn" />
       </list>
@@ -249,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1527803350217</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="gradient descent svm">
+      <created>1527866830994</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1527866830994</updated>
+    </task>
+    <task id="LOCAL-00005" summary="svm done">
+      <created>1527874332240</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1527874332240</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView">
@@ -268,7 +320,7 @@
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4980315" visible="true" weight="0.1534626" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32860824" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5010941" side_tool="true" weight="0.34536082" />
-      <window_info anchor="right" x="0" y="0" width="412" height="709" id="Documentation" order="3" side_tool="true" visible="true" weight="0.057617728" />
+      <window_info anchor="right" x="0" y="0" width="412" height="709" id="Documentation" order="3" side_tool="true" visible="true" weight="0.19556786" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49671772" weight="0.34407216" />
       <window_info anchor="bottom" id="Python Console" order="7" sideWeight="0.4994664" weight="0.39046392" />
@@ -293,10 +345,19 @@
     <MESSAGE value="classifier - no loops" />
     <MESSAGE value="finished KNN" />
     <MESSAGE value="svms" />
-    <option name="LAST_COMMIT_MESSAGE" value="svms" />
+    <MESSAGE value="gradient descent svm" />
+    <MESSAGE value="svm done" />
+    <option name="LAST_COMMIT_MESSAGE" value="svm done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/mycode/classifiers/softmax.py</url>
+          <line>40</line>
+          <option name="timeStamp" value="88" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -304,7 +365,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="75" />
+      <option name="time" value="89" />
     </breakpoint-manager>
   </component>
   <component name="debuggerHistoryManager">
@@ -343,7 +404,7 @@
           <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
+            <marker date="1527872522254" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -364,7 +425,7 @@
           <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
+            <marker date="1527872522254" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -385,7 +446,7 @@
           <caret line="134" column="22" selection-start-line="134" selection-start-column="22" selection-end-line="134" selection-end-column="22" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
+            <marker date="1527872522254" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
@@ -512,13 +573,6 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycode/myDataUtils.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/cs231n/classifiers/linear_svm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -561,41 +615,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycode/classifiers/softmax.py">
+    <entry file="file://$PROJECT_DIR$/cs231n/classifiers/softmax.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="324">
+          <caret line="42" column="29" lean-forward="true" selection-start-line="42" selection-start-column="29" selection-end-line="42" selection-end-column="29" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_classifier.py">
+    <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="129" column="24" selection-start-line="129" selection-start-column="24" selection-end-line="129" selection-end-column="24" />
+        <state relative-caret-position="198">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="54" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
+            <marker date="1527872522254" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mycode/svmLogic.py">
+    <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_classifier.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
+        <state relative-caret-position="313">
+          <caret line="100" column="52" lean-forward="true" selection-start-line="100" selection-start-column="52" selection-end-line="100" selection-end-column="52" />
           <folding>
             <element signature="e#0#37#0" expanded="true" />
-            <marker date="1527859556590" expanded="true" signature="5230:5386" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mycode/classifiers/linear_svm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="106" column="14" lean-forward="true" selection-start-line="106" selection-start-column="14" selection-end-line="106" selection-end-column="14" />
+        <state relative-caret-position="54">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycode/myDataUtils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycode/softmaxLogic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mycode/classifiers/softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="51" column="15" lean-forward="true" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
