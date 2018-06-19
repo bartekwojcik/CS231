@@ -92,3 +92,39 @@ loss, grad = softmax_loss_naive(W, X_dev, y_dev, 0.0)
 print('loss: %f' % loss)
 print('sanity check: %f' % (-np.log(0.1)))
 
+# Complete the implementation of softmax_loss_naive and implement a (naive)
+# version of the gradient that uses nested loops.
+loss, grad = softmax_loss_naive(W, X_dev, y_dev, 0.0)
+
+# # As we did for the SVM, use numeric gradient checking as a debugging tool.
+# # The numeric gradient should be close to the analytic gradient.
+# from cs231n.gradient_check import grad_check_sparse
+# f = lambda w: softmax_loss_naive(w, X_dev, y_dev, 0.0)[0]
+# grad_numerical = grad_check_sparse(f, W, grad, 10)
+#
+# # similar to SVM case, do another gradient check with regularization
+# loss, grad = softmax_loss_naive(W, X_dev, y_dev, 5e1)
+# f = lambda w: softmax_loss_naive(w, X_dev, y_dev, 5e1)[0]
+# grad_numerical = grad_check_sparse(f, W, grad, 10)
+
+# Now that we have a naive implementation of the softmax loss function and its gradient,
+# implement a vectorized version in softmax_loss_vectorized.
+# The two versions should compute the same results, but the vectorized version should be
+# much faster.
+tic = time.time()
+loss_naive, grad_naive = softmax_loss_naive(W, X_dev, y_dev, 0.000005)
+toc = time.time()
+print('naive loss: %e computed in %fs' % (loss_naive, toc - tic))
+
+from classifiers.softmax import softmax_loss_vectorized
+tic = time.time()
+loss_vectorized, grad_vectorized = softmax_loss_vectorized(W, X_dev, y_dev, 0.000005)
+toc = time.time()
+print('vectorized loss: %e computed in %fs' % (loss_vectorized, toc - tic))
+
+# As we did for the SVM, we use the Frobenius norm to compare the two versions
+# of the gradient.
+grad_difference = np.linalg.norm(grad_naive - grad_vectorized, ord='fro')
+print('Loss difference: %f' % np.abs(loss_naive - loss_vectorized))
+print('Gradient difference: %f' % grad_difference)
+
